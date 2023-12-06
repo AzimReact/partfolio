@@ -1,3 +1,24 @@
+@import url("../css/default.css");
+.container {
+  max-width: 1118px;
+  width: 67%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+  }
+}
 
+.header {
+  height: 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-icon, .header .logo {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=gallery.css.map */

@@ -1,5 +1,169 @@
-h1 {
-  color: red;
+@import url("../css/default.css");
+.container {
+  max-width: 1118px;
+  width: 67%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+  }
+}
+
+.header {
+  height: 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-icon, .header .logo {
+  cursor: pointer;
+}
+
+.sec1 {
+  display: flex;
+}
+.sec1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sec1-text-fullname {
+  font-size: 16px;
+}
+.sec1-text-spec {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 3px 0 7px 0;
+}
+.sec1-text-down {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec2-title {
+  margin: 90px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+.sec2-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.sec2-content-def {
+  width: 350px;
+  height: 380px;
+  border-radius: 30px;
+  position: relative;
+}
+.sec2-content-def-text {
+  position: absolute;
+  top: 0px;
+  padding: 20px 30px;
+}
+.sec2-content-def-text > div {
+  text-align: center;
+}
+.sec2-content-def-text > div:nth-child(1) {
+  color: #fff;
+}
+.sec2-content-def-text > div:nth-child(2) {
+  margin: 23px 0;
+  font-size: 16px;
+  height: 230px;
+}
+.sec2-content-def-text > div:nth-child(3) > a {
+  color: #fff;
+  font-weight: 900;
+}
+.sec2-content-def-text > div:nth-child(4) {
+  padding-top: 15px;
+}
+.sec2-content-def-text .sec3-content-text {
+  height: 180px !important;
+}
+.sec2-content-def-text .sec3-link {
+  font-weight: 400 !important;
+  text-decoration: underline;
+}
+.sec2-content-def .sec3-text {
+  position: absolute;
+  bottom: -10px;
+}
+.sec2-content .snake {
+  background: url("../images/snake.svg") center/cover;
+}
+.sec2-content .cross-zero {
+  background: url("../images/cross-zero.svg") center/cover;
+}
+.sec2-content .laptop {
+  background: url("../images/laptop.svg") center/cover;
+}
+.sec2-content .python {
+  background: url("../images/python.svg") center/cover;
+}
+.sec2-content .java {
+  background: url("../images/java.svg") center/cover;
+}
+.sec2 .sec3-bottom {
+  text-align: center;
+  margin-top: 100px;
+  padding: 60px;
+}
+.sec2 .sec3-bottom > pre:nth-child(2) {
+  margin-top: 75px;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-text > pre:nth-child(1) {
+  color: #FFF;
+  font-weight: 900;
+}
+.footer-text ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-text ul li {
+  font-size: 16px;
+}
+.footer-media {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.footer-media-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-media-wrapper div {
+  color: #FFF;
+}
+
+.license {
+  font-size: 16px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */

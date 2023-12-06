@@ -4,14 +4,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Main</title>
   <link rel="stylesheet" href="./css/index.css">
+  <script defer src="./scripts/modal.js"></script>
 </head>
 
 <body>
-  <a href="./pages/about.html">
-    <h1>main</h1>
-  </a>
+  <header class="container">
+    <div class="header">
+      <img class="logo" src="./images/logo.svg" alt="logo">
+      <img class="menu-icon" src="./images/menu.svg" alt="menu">
+    </div>
+  </header>
+
+  <!-- модалка -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <a href="./index.html">Main</a>
+      <a href="./about.html">About me</a>
+      <a href="./gallery.html">Gallery</a>
+      <span class="close" id="closeModal">&times;</span>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <section class="sec1">
+      <div class="sec1-text">
+        <div>
+          <pre class="sec1-text-fullname">A S E L D  Z H U R A E V A</pre>
+          <div class="sec1-text-spec">WEB DEVELOPMENT</div>
+          <p class="sec1-text-desc">Hello, my name is Asel. I am a JAVA backend developer and beginner-frontend
+            developer.</p>
+        </div>
+        <div>
+          <div> V I E W :</div>
+
+          <div class="sec1-text-down">
+            <span>
+              M Y G A M E S
+            </span>
+            <span>P O R T F O L I O</span>
+          </div>
+        </div>
+      </div>
+      <img src="./images/main-img.svg" alt="">
+    </section>
+
+    <section class="sec2">
+      <pre class="sec2-title">M Y  G A M E S</pre>
+      <div class="sec2-content">
+        <div class="sec2-content-def snake">
+          <img src="./images/transp.svg" alt="transp">
+          <div class="sec2-content-def-text">
+            <div>SNAKE</div>
+            <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</div>
+            <div><a href="">View Game</a></div>
+          </div>
+        </div>
+        <div class="sec2-content-def cross-zero">
+          <img src="./images/transp.svg" alt="transp">
+          <div class="sec2-content-def-text">
+            <div>TICTACTOE</div>
+            <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</div>
+            <div><a href="">View Game</a></div>
+          </div>
+        </div>
+        <div class="sec2-content-def laptop">
+          <img src="./images/transp.svg" alt="transp">
+          <div class="sec2-content-def-text">
+            <div>SPEED-TYPING TEST</div>
+            <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</div>
+            <div><a href="">View Game</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <pre class="sec2-title">P O R T F O L I O</pre>
+      <div class="sec2-content">
+        <div class="sec2-content-def">
+          <img src="./images/sec3-img.svg" alt="">
+          <div class="sec3-text">
+            <div>Look, here are my projects, not all projects here, this is just an example</div>
+          </div>
+        </div>
+        <div class="sec2-content-def python">
+          <img src="./images/transp.svg" alt="transp">
+          <div class="sec2-content-def-text">
+            <div>COURSEWORK IN PYTHON</div>
+            <div class="sec3-content-text">Frontend: HTML, CSS, JS
+              Backend: Python, Django(Python)
+              Design: Figma, Adobe Photoshop
+            </div>
+            <div><a class="sec3-link" href="">VIEW CODE</a></div>
+            <div><a class="sec3-link" href="">MORE INFORMATION</a></div>
+          </div>
+        </div>
+        <div class="sec2-content-def java">
+          <img src="./images/transp.svg" alt="transp">
+          <div class="sec2-content-def-text">
+            <div>COURSEWORK IN JAVA</div>
+            <div class="sec3-content-text">Frontend: HTML, CSS, JS
+              Backend: Python, Django(Python)
+              Design: Figma, Adobe Photoshop
+            </div>
+            <div><a class="sec3-link" href="">VIEW CODE</a></div>
+            <div><a class="sec3-link" href="">MORE INFORMATION</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="sec3-bottom">
+        <pre>N E E D  A  B A C K E N D  J A V A   W E B - D E V E L O P E R   ?</pre>
+        <pre>LET’S WORK TOGETHER!</pre>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <hr>
+    <div class="footer">
+      <div class="footer-text">
+        <pre>CONTACT 
+INFORMATION-</pre>
+        <pre>Feel free to reach out to me any
+time. I prefer to talk over
+Instagram or Telegram.</pre>
+        <ul>
+          <li>E: aseldzhuraeva@gmail.com</li>
+          <li>P: +996-702-699-699</li>
+        </ul>
+      </div>
+      <div class="footer-media">
+        <div class="footer-media-wrapper">
+          <a href=""><img src="./images/instagram.svg" alt="Instagram"></a>
+          <div>Instagram</div>
+        </div>
+        <div class="footer-media-wrapper">
+          <a href=""><img src="./images/telegram.svg" alt="Telegram"></a>
+          <div>Telegram</div>
+        </div>
+        <div class="footer-media-wrapper">
+          <a href=""><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
+          <div>WhatsApp</div>
+        </div>
+
+      </div>
+      <img class="contact-me" src="./images/contact-me.svg" alt="footer-image">
+    </div>
+    <pre class="license">© 2021 — 2023 Asel Dzhuraeva
+Made with love in Bishkek, Kyrgyzstan</pre>
+  </footer>
+
 </body>
 
 </html>
