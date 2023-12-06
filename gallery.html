@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
   <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Подключение Swiper.js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="../scripts/modal.js"></script>
+  <script defer src="../scripts/gallery.js"></script>
+
 </head>
 
 <body>
@@ -26,6 +31,43 @@
       <span class="close" id="closeModal">&times;</span>
     </div>
   </div>
+
+  <main class="container">
+    <section class="sec1">
+      <h1>COURSEWORK IN JAVA</h1>
+      <p class="text1">The project goal was to create a prototype of a website of the Volkswagen Dealer Center and the
+        result is
+        accomplished.
+        The result of the project is a fully working website with the front part and admin panel. Admin panel allows
+        website operators to modify the database of the website. Codes and schemas for both backend and frontend parts
+        are included in the project documentation.</p>
+
+      <!-- HTML разметка для слайдера -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="car2" src="./images/car.svg" alt="car1"></div>
+          <div class="swiper-slide"><img class="car2" src="./images/car2.jpg" alt="car2"></div>
+          <!-- Добавьте нужное количество слайдов -->
+        </div>
+        <!-- Если вам нужна пагинация (индикаторы слайдов) -->
+        <div class="swiper-pagination"></div>
+        <!-- Если вам нужные стрелки "вперед" и "назад" -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+      <p class="text2">As a part of this project, requirements and limitations was analyzed. As a result, the Django
+        framework was
+        selected as a base solution of this project. The frontend part for this project is based on HTML, CSS and
+        JavaScript. The database solution selected is SQLite.
+        The internal schema of the website and database was designed, according to the requirements. As for the front
+        part, the website UI was designed according to the modern UI/UX design principles.
+        The result of the project is a fully working website with the front part and admin panel. Admin panel allows
+        website operators to modify the database of the website.</p>
+    </section>
+
+  </main>
 </body>
 
 </html>
