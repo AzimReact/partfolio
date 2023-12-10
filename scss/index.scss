@@ -10,16 +10,6 @@
   }
 }
 
-.header{
-  height: 127px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  .menu-icon, .logo{
-    cursor: pointer;
-  }
-}
 
 .sec1{
   display: flex;
@@ -47,13 +37,21 @@
 
 // section 2 and 3 
 .sec2{
+  padding-top: 90px;
   &-title{
-    margin: 90px 0;
+    margin-bottom: 90px;
     text-align: center;
     font-size: 40px;
     font-weight: 900;
     color: #fff;
+    cursor: pointer;
   }
+  
+  &-title:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+  
   &-content{
     display: flex;
     justify-content: space-between;
@@ -62,9 +60,11 @@
     &-def{
       width: 350px;
       height: 380px;
-      border-radius: 30px;
+      border-radius: 35px;
       position: relative;
+      cursor: pointer;
       &-text{
+        display: none;
         position: absolute;
         top: 0px;
         padding: 20px 30px;
@@ -94,26 +94,36 @@
           text-decoration: underline;
         }
       } 
+      &-transp{
+        display: none;
+      }
+      &:hover > &-transp, &:hover > &-text{ 
+        display:block;
+        transition: 0.5;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        animation: fadeIn 0.7s ease;
+      }
+      
+      @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+      }
+      
       .sec3-text{
         position: absolute;
         bottom: -10px;
       }
     }
-    .snake{
-      background: url('../images/snake.svg') center / cover;
-    }
-    .cross-zero{
-      background: url('../images/cross-zero.svg') center / cover;
-    }
-    .laptop{
-      background: url('../images/laptop.svg') center / cover;
-    }
-    .python{
-      background: url('../images/python.svg') center / cover;
-    }
-    .java{
-      background: url('../images/java.svg') center / cover;
-    }
+    // .snake{
+    //   background: url('./images/transp.svg') center / cover;
+    // }
   }
   .sec3-bottom{
     text-align: center;
@@ -148,7 +158,7 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
-      li{
+      li > a{
         font-size: 16px;
       }
     }
@@ -173,8 +183,3 @@
   font-size: 16px;
   margin: 50px 0;
 }
-
-
-
-
-

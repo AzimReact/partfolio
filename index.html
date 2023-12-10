@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main</title>
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./scripts/wow.min.js"></script>
   <script defer src="./scripts/modal.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 
 <body>
@@ -29,7 +34,7 @@
 
   <main class="container">
 
-    <section class="sec1">
+    <section id="sec1" class="sec1 wow animate__animated animate__fadeInUp">
       <div class="sec1-text">
         <div>
           <pre class="sec1-text-fullname">A S E L D   Z H U R A E V A</pre>
@@ -51,11 +56,14 @@
       <img src="./images/main-img.svg" alt="">
     </section>
 
-    <section class="sec2">
-      <pre class="sec2-title">M Y  G A M E S</pre>
-      <div class="sec2-content">
-        <div class="sec2-content-def snake">
-          <img src="./images/transp.svg" alt="transp">
+    <section id="sec2" class="sec2">
+      <a href="#sec2">
+        <pre class="sec2-title wow animate__animated animate__fadeInUp">M Y  G A M E S</pre>
+      </a>
+      <div class="sec2-content wow animate__animated animate__fadeInUp">
+        <div class="sec2-content-def">
+          <img src="./images/snake.svg" alt="snake">
+          <img class="sec2-content-def-transp" src="./images/transp.svg" alt="transp">
           <div class="sec2-content-def-text">
             <div>SNAKE</div>
             <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -64,8 +72,9 @@
             <div><a href="">View Game</a></div>
           </div>
         </div>
-        <div class="sec2-content-def cross-zero">
-          <img src="./images/transp.svg" alt="transp">
+        <div class="sec2-content-def">
+          <img src="./images/cross-zero.svg" alt="cross-zero">
+          <img class="sec2-content-def-transp" src="./images/transp.svg" alt="transp">
           <div class="sec2-content-def-text">
             <div>TICTACTOE</div>
             <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -74,8 +83,9 @@
             <div><a href="">View Game</a></div>
           </div>
         </div>
-        <div class="sec2-content-def laptop">
-          <img src="./images/transp.svg" alt="transp">
+        <div class="sec2-content-def">
+          <img src="../images/laptop.svg" alt="laptop">
+          <img class="sec2-content-def-transp" src="./images/transp.svg" alt="transp">
           <div class="sec2-content-def-text">
             <div>SPEED-TYPING TEST</div>
             <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -87,17 +97,20 @@
       </div>
     </section>
 
-    <section class="sec2">
-      <pre class="sec2-title">P O R T F O L I O</pre>
-      <div class="sec2-content">
+    <section id="sec3" class="sec2">
+      <a href="#sec3">
+        <pre class="sec2-title wow animate__animated animate__fadeInUp">P O R T F O L I O</pre>
+      </a>
+      <div class="sec2-content wow animate__animated animate__fadeInUp">
         <div class="sec2-content-def">
-          <img src="./images/sec3-img.svg" alt="">
+          <img src="./images/sec3-img.svg" alt="look-my-projects">
           <div class="sec3-text">
             <div>Look, here are my projects, not all projects here, this is just an example</div>
           </div>
         </div>
-        <div class="sec2-content-def python">
-          <img src="./images/transp.svg" alt="transp">
+        <div class="sec2-content-def">
+          <img src="../images/python.svg" alt="python">
+          <img class="sec2-content-def-transp" src="./images/transp.svg" alt="transp">
           <div class="sec2-content-def-text">
             <div>COURSEWORK IN PYTHON</div>
             <div class="sec3-content-text">Frontend: HTML, CSS, JS
@@ -108,8 +121,9 @@
             <div><a class="sec3-link" href="">MORE INFORMATION</a></div>
           </div>
         </div>
-        <div class="sec2-content-def java">
-          <img src="./images/transp.svg" alt="transp">
+        <div class="sec2-content-def">
+          <img src="../images/java.svg" alt="transp">
+          <img class="sec2-content-def-transp" src="./images/transp.svg" alt="transp">
           <div class="sec2-content-def-text">
             <div>COURSEWORK IN JAVA</div>
             <div class="sec3-content-text">Frontend: HTML, CSS, JS
@@ -121,7 +135,7 @@
           </div>
         </div>
       </div>
-      <div class="sec3-bottom">
+      <div class="sec3-bottom wow animate__animated animate__fadeInUp">
         <pre>N E E D  A  B A C K E N D  J A V A   W E B - D E V E L O P E R   ?</pre>
         <pre>LET’S WORK TOGETHER!</pre>
       </div>
@@ -139,21 +153,23 @@ INFORMATION-</pre>
 time. I prefer to talk over
 Instagram or Telegram.</pre>
         <ul>
-          <li>E: aseldzhuraeva@gmail.com</li>
-          <li>P: +996-702-699-699</li>
+          <li><a href="mailto:aseldzhuraeva@gmail.com">E: aseldzhuraeva@gmail.com</a></li>
+          <li><a href="tel:+996-702-699-699">P: +996-702-699-699</a></li>
         </ul>
       </div>
       <div class="footer-media">
         <div class="footer-media-wrapper">
-          <a href=""><img src="./images/instagram.svg" alt="Instagram"></a>
+          <a href="https://instagram.com/20dzh?igshid=NGVhN2U2NjQ0Yg=="><img src="./images/instagram.svg"
+              alt="Instagram"></a>
           <div>Instagram</div>
         </div>
         <div class="footer-media-wrapper">
-          <a href=""><img src="./images/telegram.svg" alt="Telegram"></a>
+          <a href="https://t.me/d20zh"><img src="./images/telegram.svg" alt="Telegram"></a>
           <div>Telegram</div>
         </div>
         <div class="footer-media-wrapper">
-          <a href=""><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="https://api.whatsapp.com/send?phone=996777766067"><img src="./images/whatsapp.svg"
+              alt="WhatsApp"></a>
           <div>WhatsApp</div>
         </div>
 

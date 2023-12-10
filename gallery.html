@@ -10,7 +10,8 @@
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="../scripts/modal.js"></script>
   <script defer src="../scripts/gallery.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./scripts/wow.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
   </header>
 
   <!-- модалка -->
-  <div class="modal" id="myModal">
+  <div class="modal wow animate__animated animate__fadeInUp" id="myModal">
     <div class="modal-content">
       <a href="./index.html">Main</a>
       <a href="./about.html">About me</a>
@@ -32,9 +33,10 @@
   </div>
 
   <main class="container">
-    <section class="sec1">
-      <h1>COURSEWORK IN JAVA</h1>
-      <p class="text1">The project goal was to create a prototype of a website of the Volkswagen Dealer Center and the
+    <section id="sec1" class="sec1">
+      <h1 class="sec1 wow animate__animated animate__fadeInUp">COURSEWORK IN JAVA</h1>
+      <p class="text1 wow animate__animated animate__fadeInUp">The project goal was to create a prototype of a website
+        of the Volkswagen Dealer Center and the
         result is
         accomplished.
         The result of the project is a fully working website with the front part and admin panel. Admin panel allows
@@ -42,7 +44,7 @@
         are included in the project documentation.</p>
 
       <!-- слайдер -->
-      <div class="swiper-container">
+      <div class="swiper-container wow animate__animated animate__fadeInUp">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img class="car2" src="./images/car.svg" alt="car1"></div>
           <div class="swiper-slide"><img class="car2" src="./images/car2.jpg" alt="car2"></div>
@@ -55,7 +57,8 @@
         <div class="swiper-button-prev"></div>
       </div>
 
-      <p class="text2">As a part of this project, requirements and limitations was analyzed. As a result, the Django
+      <p class="text2">As a part of this project, requirements and limitations
+        was analyzed. As a result, the Django
         framework was
         selected as a base solution of this project. The frontend part for this project is based on HTML, CSS and
         JavaScript. The database solution selected is SQLite.
