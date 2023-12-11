@@ -1,5 +1,5 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -24,19 +24,21 @@ a {
 }
 
 hr {
-  color: #D9D9D9;
+  color: #D9D9D9
 }
 
-.container {
+.container{
   max-width: 1118px;
   width: 82%;
   margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  .container {
+  // @media (max-width: 1024px) {
+  //     width: calc(100% - 100px);
+  //     margin: 0px 50px;
+  // }
+  @media (max-width: 1024px) {
     width: calc(100% - 40px);
     margin: 0px 20px;
-  }
+}
 }
 
 .header {
@@ -44,24 +46,27 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header .menu-icon, .header .logo {
-  cursor: pointer;
-}
-.header .menu-icon:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-@media (max-width: 550px) {
-  .header .logo {
-    width: 150px;
+  .menu-icon, .logo {
+    cursor: pointer;
   }
-  .header .menu-icon {
-    width: 90px;
+  
+  .menu-icon:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 550px) {
+    .logo{
+      width: 150px;
+    }
+    .menu-icon{
+      width: 90px;
+    }
   }
 }
 
 /* Стили для модального окна тут */
+
 .modal {
   display: none;
   position: fixed;
@@ -86,14 +91,14 @@ hr {
   text-align: center;
 }
 
-.modal-content > a {
+.modal-content>a {
   width: 180px;
   border-bottom: 1px solid #D9D9D9;
   font-size: 30px;
   color: #D9D9D9;
 }
 
-.modal-content > a:hover {
+.modal-content>a:hover {
   color: #FFF;
   border-bottom: 1px solid #FFF;
   transform: scale(1.1);
@@ -114,5 +119,3 @@ hr {
   color: #fff;
   transform: scale(1.1);
 }
-
-/*# sourceMappingURL=default.css.map */

@@ -1,22 +1,36 @@
 @import url('../css/default.css');
 
-.container{
-  max-width: 1118px;
-  width: 82%;
-  margin: 0 auto;
-  @media (max-width: 1024px) {
-      width: calc(100% - 40px);
-      margin: 0px 20px;
-  }
-}
-
 .sec1{
   display: flex;
-  
+  justify-content: space-between;
+  @media (max-width: 750px) {
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 20px;
+  }
+  &-imgdiv{
+    width: 45%;
+    img{
+      width: 100%;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img{
+        width: 60%;
+      };
+    }
+  }
   &-text{
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @media (max-width: 750px) {
+      align-items: center;
+      width: 100%;
+    }
     &-fullname{
       font-size: 16px;
     }
@@ -25,10 +39,18 @@
       font-size: 40px;
       font-weight: 900;
       margin: 3px 0 7px 0;
+      @media (max-width: 550px) {
+        font-size: 30px;
+      }
     }
     &-desc{
+      @media (max-width: 550px) {
+        font-size: 16px;
+        white-space: pre-wrap;
+      }
       strong{
         font-weight: 700;
+        white-space: pre-wrap;
       }
     }
   }
@@ -38,6 +60,13 @@
   margin-top: 100px;
   display: flex;
   gap: 80px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 100%;
+    }
+  }
   &-left{
     display: flex;
     flex-direction: column;
@@ -55,6 +84,8 @@
     &-bottom{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
       &-title{
         margin-bottom: 40px;
       }

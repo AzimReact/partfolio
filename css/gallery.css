@@ -1,16 +1,4 @@
 @import url("../css/default.css");
-.container {
-  max-width: 1118px;
-  width: 82%;
-  margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  .container {
-    width: calc(100% - 40px);
-    margin: 0px 20px;
-  }
-}
-
 .sec1 {
   margin-top: 110px;
 }
