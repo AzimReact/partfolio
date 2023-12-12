@@ -33,6 +33,11 @@
   justify-content: space-evenly;
   gap: 15px;
 }
+.sec1-text span:hover {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: border-bottom 0.3s ease;
+}
 @media (max-width: 750px) {
   .sec1-text {
     width: 100%;
@@ -171,6 +176,16 @@
   }
   .sec2 .sec3-bottom > div:nth-child(2) {
     font-size: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .sec2 .sec3-bottom {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .sec2 .sec3-bottom {
+    margin-top: 20px;
   }
 }
 
